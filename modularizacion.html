@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head></head>
+
+<body>
+
+    <p>
+    <h2>Antecedentes</h2>
+    JavaScript se ha estandarizado en lo que se conoce como ES6 (ECMAScript 2015)
+    Antes de eso no existia un estandar para generar modulos. Lo existente se convirtio en estandar de-facti
+    (CommonJS, RequireJS, AMD).
+    </p>
+    <p>
+    <h2>Problema</h2>
+    Al programar JS se dividia el código en archivos que se concatenaban al generar la aplicación para producir un
+    único archivo fuente. Esta práctica, podia generar varios problemas:
+
+    colisiones de nombres entre archivos (por ejemplo: una misma variable global declarada en archivos distintos).
+    multiples referencias al mismo archivo podían resultar en el mismo código siendo ejecutado varias veces
+    </p>
+    <p>
+    <h2>Solucion:</h2>
+    Se introduce el concepto de modulo como una unidad aislada:
+    <ol>
+        <li>Cada modulo posee su propio scope lo que previene las colisiones de nombre.</li>
+        <li>Cada modulo es una clase de tipo singleton que puede ser importado varias veces en distintos momentos.</li>
+    </ol>
+    </p>
+
+    <p> Algunas formas de modularizar en JS:
+    <ol>
+        <li>Expresión de función inmediatamente invocada (IIFE)</li>
+        <li>CommonJS (CJS)</li>
+        <li>Definición de módulo asíncrono (AMD)</li>
+        <li>Definición de módulo universal (UMD)</li>
+        <li>Módulos ECMAScript (ESM)</li>
+    </ol>
+    </p>
+</body>
+
+</html>
